@@ -32,18 +32,16 @@ void leitura_arquivo(){
 	
 	media = (info.nota1 + info.nota2) / 2;
 	
-	fprintf(arquivo2, "Nome: %s\n", info.nome);
-	fprintf(arquivo2, "Media: %.2f\n", media);
+	fprintf(arquivo2, "%s, %.2f, ", info.nome, media);
 	
 	if (media >= 7.0){
 	
     	fprintf(arquivo2, "APROVADO\n");
-    	fprintf(arquivo2, "\n");
     	
 	}
 	else if (media < 7.0){
+
     	fprintf(arquivo2, "REPROVADO\n");	
-    	fprintf(arquivo2, "\n");
 
 	}
 	
