@@ -9,7 +9,7 @@ typedef struct{
 	float nota1, nota2;
 } Dados;
 
-void leitura_arquivo(){
+void leitura_e_escrita_do_arquivo(){
 	
 	FILE *arquivo;
 	FILE *arquivo2;
@@ -54,9 +54,10 @@ void leitura_arquivo(){
 	
 };
 
+
 int main(){
 	
-	leitura_arquivo();
+	leitura_e_escrita_do_arquivo();
 
 	return 0;
 
